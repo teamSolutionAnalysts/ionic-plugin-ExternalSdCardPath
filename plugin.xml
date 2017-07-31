@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.example.extsdcard"
+        version="0.7.0">
+
+  <name>RemovableSDPath</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/externalsd.js" target="js/externalsd.js"/>
+
+  <js-module src="www/externalsd.js" name="externalsd">
+    <clobbers target="externalsd" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="ExternalSd">
+        <param name="android-package" value="com.example.plugin.ExternalSd"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/ExternalSd.java" target-dir="src/com/example/plugin/"/>
+  </platform>
+  
+
+</plugin>
