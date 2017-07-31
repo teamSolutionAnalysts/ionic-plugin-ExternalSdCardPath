@@ -1,47 +1,41 @@
-# Cordova Hello World Plugin
+# Cordova Android external SD card path plugin
 
-Simple plugin that returns your string prefixed with hello.
-
-Greeting a user with "Hello, world" is something that could be done in JavaScript. This plugin provides a simple example demonstrating how Cordova plugins work.
+Plugin that returns the path of internal and external sd card.
 
 ## Using
-
-Create a new Cordova Project
-
-    $ cordova create hello com.example.helloapp Hello
     
 Install the plugin
 
-    $ cd hello
-    $ cordova plugin add https://github.com/don/cordova-plugin-hello.git
+    $ cordova plugin add https://github.com/teamSolutionAnalysts/ionic-plugin-ExternalSdCardPath.git
     
 
-Edit `www/js/index.js` and add the following code inside `onDeviceReady`
 
 ```js
     var success = function(message) {
-        alert(message);
+        var path = JSON.parse(message);
+        console.log(path.SDCard.external);
     }
 
     var failure = function() {
-        alert("Error calling Hello Plugin");
+        alert("Error calling external Plugin");
     }
 
-    hello.greet("World", success, failure);
+    externalsd.getPath("microSD", success, failure);
 ```
+    
+   You can access path of external and internal by following this way:
+   
+    1) path.SDCard.external 
+    2) path.SDCard.internal 
 
-Install iOS or Android platform
+Install Android platform
 
-    cordova platform add ios
     cordova platform add android
     
-Run the code
-
-    cordova run 
 
 ## More Info
 
 For more information on setting up Cordova see [the documentation](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
 
 For more info on plugins see the [Plugin Development Guide](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html)
-"# ionic-plugin-ExternalSdCardPath" 
+
