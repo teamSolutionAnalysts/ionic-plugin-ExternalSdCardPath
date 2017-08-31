@@ -1,0 +1,25 @@
+{
+  "name": "ionic-plugin-externalsdcardpath",
+  "version": "1.0.0",
+  "description": "IONIC plugin external SD card path plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamSolutionAnalysts/ionic-plugin-ExternalSdCardPath.git"
+  },
+  "keywords": [
+    "ionic",
+    "sd",
+    "card",
+    "android"
+  ],
+  "author": "Altaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teamSolutionAnalysts/ionic-plugin-ExternalSdCardPath/issues"
+  },
+  "homepage": "https://github.com/teamSolutionAnalysts/ionic-plugin-ExternalSdCardPath#readme"
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.example.extsdcard"
-        version="0.7.0">
+        id="com.sa.extsdcard"
+        version="1.0.0">
 
   <name>RemovableSDPath</name>
 
@@ -19,11 +19,11 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="ExternalSd">
-        <param name="android-package" value="com.example.plugin.ExternalSd"/>
+        <param name="android-package" value="com.sa.extsdcard.ExternalSd"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/ExternalSd.java" target-dir="src/com/example/plugin/"/>
+    <source-file src="src/android/ExternalSd.java" target-dir="src/com/sa/extsdcard/"/>
   </platform>
   
 
